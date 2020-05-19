@@ -1,0 +1,29 @@
+# 2020_5-14_CodePractice
+
+public class Main{
+    public static void main(String[] args) {
+        StringBuilder sb=new StringBuilder("111");
+        String ss="hello";
+        System.out.println(sb);
+        System.out.println("StringBuilder:"+sb.append("ch").append("111"));
+        System.out.println(sb.appendCodePoint(2));
+        sb.setCharAt(0,'!');
+        System.out.println(sb);
+        ss.indexOf(2);
+        System.out.println(ss);
+
+        StringBuffer sa = new StringBuffer("jack");
+        sa.append(true);
+        sa.append('a');
+        sa.append(97).append(34.0).append(new char[]{'o','o'});   // 链式编程
+        System.out.println( sa.toString() );          // 输出缓冲区的中文本数据
+        sa = new StringBuffer("jack");
+        sa.insert( 2, "java" );                       // jajavack
+        System.out.println( sa.toString() );
+        System.out.println(sa.substring(3));
+        System.out.println(Math.floor(2.3)); //2.0
+        System.out.println(Math.floor(-2.3));//-3.0
+
+    }
+
+}
